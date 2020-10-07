@@ -15,7 +15,31 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
+<style>
+#skiptocontent {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 8px;
+    background: #BF1722;
+    z-index: 9999999999999999999999;
+}
+#skiptocontent:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline-color: transparent;
+
+}
+
+</style>
+
 <body>
+	<a href="#themaincontent" id="skiptocontent" tabindex="0" aria-hidden="false">skip to main content</a>
 	<div class="container-fluid">
 		<header id="home">
 			<div class="container hdr-container">
@@ -77,7 +101,7 @@
 
 					<div class="abt-survey-container" id="about">
 						<div class="container px-3 py-5">
-							<h1 class="sec-title t-white f-28 f-600 m-0 mb-4">About the Survey</h1>
+							<h1 class="sec-title t-white f-28 f-600 m-0 mb-4" id="themaincontent">About the Survey</h1>
 							<p class="t-white f-18">
 								Your participation allows NSCES to use the SDR
 								data to prepare two Congressionally mandated
